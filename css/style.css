@@ -7,8 +7,16 @@
   position: fixed;
   top: 2px;
   left: 2px;
-  display: hidden;
+  display: none;
   cursor: pointer;
+}
+
+.cross {
+  position: fixed;
+  top: 3px;
+  left: 2px;
+  display: none;
+  font-size: 25px;
 }
 
 .line {
@@ -16,7 +24,7 @@
   height: 2.5px;
   /* padding: 3px; */
   margin: 3px;
-  background-color: #ffc107;
+  background-color: #1f1d1a;
 }
 
 .first-div {
