@@ -1,6 +1,13 @@
 @media screen and (max-width: 468px) {
   .first-div {
-    display: none;
+    /* display: none; */
+    width: 60%;
+    transform: translateX(-100%);
+    transition: all 0.8s;
+  }
+  .show-div {
+    top: 25px;
+    transform: translateX(0%);
   }
   .second-div {
     position: inherit;
@@ -28,13 +35,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px auto;
+    margin: 20px auto;
   }
 
   .third-inner {
     flex-direction: column;
     align-items: center;
   }
+
   .btn-cl {
     width: 80vw;
     padding: 0.4rem 1rem;
@@ -46,12 +54,28 @@
   .t-first {
     width: 30vw;
   }
+
+  .burger {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 469px) and (max-width: 1071px) {
-  .first-div {
-    display: none;
+  .burger {
+    display: block;
   }
+
+  .first-div {
+    /* display: none; */
+    width: 60%;
+    transform: translateX(-100%);
+    transition: all 0.8s;
+  }
+  .show-div {
+    top: 25px;
+    transform: translateX(0%);
+  }
+
   .second-div {
     position: inherit;
     left: 0%;
