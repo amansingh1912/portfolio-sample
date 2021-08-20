@@ -1,6 +1,22 @@
-// imgMain = document.querySelector(".img-sec");
-// imgIn = document.querySelector(".image-sec");
+burger = document.querySelector(".burger")
+firstDiv = document.querySelector(".first-div")
+close = document.querySelector(".cross")
 
-// imgMain.addEventListener("click", function() {
-//     imgIn.classList.add(".show-img");
-// })
+
+burger.addEventListener("click", function ()
+{
+    firstDiv.classList.add("show-div")
+    burger.style.display = "none";
+    close.style.display = "block";
+})
+
+close.addEventListener("click", function ()
+{
+    firstDiv.classList.remove("show-div")
+    burger.style.display = "block";
+    close.style.display = "none";
+})
+
+
+
+
